@@ -27,7 +27,7 @@ function createDataRow() {
     const dataCell = document.createElement('td');
     const inputField = document.createElement('input');
     inputField.type = 'text';
-    inputField.required = true; // Make input mandatory
+    inputField.required = true;
     dataCell.appendChild(inputField);
     dataRow.appendChild(dataCell);
   }
@@ -51,7 +51,7 @@ function downloadCSV() {
       const cellValue = cells[j].querySelector('input').value;
       rowData += cellValue + ',';
     }
-    csvData += rowData.slice(0, -1) + '\n'; // Remove trailing comma
+    csvData += rowData.slice(0, -1) + '\n';
   }
   
   // Create a Blob object with the CSV data
@@ -67,10 +67,10 @@ function downloadCSV() {
 // Create the initial table
 createTable();
 
-// Add event listener to add row button
+// Add add row button
 const addRowBtn = document.getElementById('add-row-btn');
 addRowBtn.addEventListener('click', createDataRow);
 
-// Add event listener to download button
+// Add download button
 const downloadBtn = document.getElementById('download-btn');
 downloadBtn.addEventListener('click', downloadCSV);
