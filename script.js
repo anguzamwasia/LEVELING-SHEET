@@ -1,5 +1,5 @@
 // Define table header data
-const headers = ["Back Sight", "Intermediate Sight (Optional)", "Foresight", "Rise (m)", "Fall (m)", "Reduced Level (m)", "Distance (m)", "Height of Collinelimation (m)", "Remarks"];
+const headers = ["Back Sight", "Intermediate Sight", "Foresight", "Rise (m)", "Fall (m)", "Reduced Level (m)", "Distance (m)", "Height of Collinelimation (m)", "Remarks"];
 
 // Function to create and populate the table with empty rows
 function createTable() {
